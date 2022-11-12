@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  width: 10rem;
+  height: 1.5rem;
+}
+
+.navbar {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar > li {
+  list-style: none;
+  color: #434343;
+  font-weight: 400;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.header-btn {
+  font-family: "Red Rose", cursive;
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+  border-radius: 10px;
+  border: 1px solid #a02279;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 0.5rem 1rem;
+  outline: none;
+  cursor: pointer;
+}
