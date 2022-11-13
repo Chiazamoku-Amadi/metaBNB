@@ -1,5 +1,7 @@
 import "./App.css";
 import Header from "./components/Header/Header";
+import inspirationHousesData from "./inspirationHousesData";
+import Cards from "./components/Cards/Cards";
 import heroHouse1 from "./assets/heroHouse1.webp";
 import heroHouse2 from "./assets/heroHouse2.webp";
 import heroHouse3 from "./assets/heroHouse3.webp";
@@ -9,6 +11,12 @@ import Metamask from "./assets/MetamaskLogo.webp";
 import OpenSea from "./assets/OpenSeaLogo.webp";
 
 function App() {
+  const inspirationHouseCards = inspirationHousesData.map(
+    (inspirationHouseCard) => {
+      return <Cards key={inspirationHouseCard.id} {...inspirationHouseCard} />;
+    }
+  );
+
   return (
     <>
       <section className="container">
@@ -52,6 +60,12 @@ function App() {
         <img src={MBToken} className="logo" />
         <img src={Metamask} className="logo" />
         <img src={OpenSea} className="logo" />
+      </section>
+      <section className="inspiration">
+        <h3 className="inspiration-title">
+          Inspiration for your next adventure
+        </h3>
+        <div>{inspirationHouseCards}</div>
       </section>
     </>
   );
