@@ -4,6 +4,9 @@ import heroHouse1 from "./assets/heroHouse1.webp";
 import heroHouse2 from "./assets/heroHouse2.webp";
 import heroHouse3 from "./assets/heroHouse3.webp";
 import heroHouse4 from "./assets/heroHouse4.webp";
+import MBToken from "./assets/MBTokenLogo.webp";
+import Metamask from "./assets/MetamaskLogo.webp";
+import OpenSea from "./assets/OpenSeaLogo.webp";
 
 function App() {
   return (
@@ -44,6 +47,11 @@ function App() {
             </div>
           </div>
         </div>
+      </section>
+      <section className="community-logos">
+        <img src={MBToken} className="logo" />
+        <img src={Metamask} className="logo" />
+        <img src={OpenSea} className="logo" />
       </section>
     </>
   );
