@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import inspirationHousesData from "./inspirationHousesData";
 import Cards from "./components/Cards/Cards";
+import Footer from "./components/Footer/Footer";
 import heroImage from "./assets/heroImage.webp";
 import MBToken from "./assets/MBTokenLogo.webp";
 import Metamask from "./assets/MetamaskLogo.webp";
@@ -68,6 +69,7 @@ function App() {
         </div>
         <img src={NftsImage} className="nfts-image" />
       </section>
+      <Footer />
     </>
   );
 }
