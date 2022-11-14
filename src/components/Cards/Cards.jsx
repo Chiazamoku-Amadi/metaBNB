@@ -3,17 +3,24 @@ import "./Cards.css";
 
 function Card(inspirationHouseCard) {
   return (
-    <div>
-      <img src={inspirationHouseCard.picture} />
+    <div className="inspiration-house-card-container">
+      <img
+        src={inspirationHouseCard.picture}
+        className="inspiration-house-picture"
+      />
       <div>
-        <p>{inspirationHouseCard.title}</p>
-        <p>{inspirationHouseCard.price}</p>
+        <p className="inspiration-house-title">{inspirationHouseCard.title}</p>
+        <p className="inspiration-house-price">{inspirationHouseCard.price}</p>
       </div>
       <div>
-        <p>{inspirationHouseCard.distance}</p>
-        <p>{inspirationHouseCard.duration}</p>
+        <p className="inspiration-house-distance">
+          {inspirationHouseCard.distance}
+        </p>
+        <p className="inspiration-house-duration">
+          {inspirationHouseCard.duration}
+        </p>
       </div>
-      <img src={inspirationHouseCard.rating} />
+      <img src={inspirationHouseCard.rating} className="rating" />
     </div>
   );
 }
