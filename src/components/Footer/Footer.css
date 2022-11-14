@@ -2,42 +2,19 @@
   background-color: #1d1d1e;
   padding: 3rem 5rem;
   display: flex;
-  align-items: flex-start;
-  gap: 12rem;
-}
-
-.logo-section {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 3rem;
 }
 
-.logo-section > img {
+.logo-quicklinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-logo {
   height: 2rem;
   margin-bottom: 3rem;
   cursor: pointer;
-}
-
-.socials {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-.socials > img {
-  height: 1rem;
-  cursor: pointer;
-}
-
-.copyright {
-  font-weight: 400;
-  font-size: 16px;
-  color: #f7f7f7;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
 }
 
 .community,
@@ -66,4 +43,96 @@
   font-size: 14px;
   color: #f1f3f9;
   cursor: pointer;
+}
+
+.social-copyright-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: -3rem;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.socials > img {
+  height: 1rem;
+  cursor: pointer;
+}
+
+.copyright {
+  font-weight: 400;
+  font-size: 16px;
+  color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-container {
+    padding: 3rem;
+    gap: 3rem;
+  }
+
+  .logo-quicklinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+  .footer-logo {
+    margin-bottom: 2rem;
+  }
+
+  .social-copyright-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .footer-container {
+    padding: 3rem;
+    gap: 3rem;
+  }
+
+  .logo-quicklinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+  .footer-logo {
+    height: 5rem;
+    width: 15rem;
+    margin-bottom: 2rem;
+  }
+
+  .social-copyright-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 0;
+  }
+
+  .socials > img {
+    height: 1.2rem;
+  }
+
+  :is(.community, .places, .about-us) > p {
+    font-size: 24px;
+  }
+
+  :is(.community, .places, .about-us) > ul > li {
+    font-size: 18px;
+  }
 }

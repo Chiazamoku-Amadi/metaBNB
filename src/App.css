@@ -173,3 +173,168 @@
 .nfts-image {
   width: 50%;
 }
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 1rem 3rem;
+    gap: 2rem;
+  }
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-text-title {
+    font-size: 30px;
+    width: 100%;
+  }
+
+  .hero-text-description {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .hero-search {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .search-input {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .search-btn {
+    width: 60%;
+    border-radius: 8px;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .community-logos {
+    border: 1px solid black;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 0;
+  }
+
+  .inspiration {
+    padding: 2rem 3rem;
+  }
+
+  .inspiration-title {
+    font-size: 30px;
+  }
+
+  .inspiration-house-cards {
+    gap: 2rem;
+  }
+
+  .nfts {
+    flex-direction: column;
+    gap: 4rem;
+    width: 100%;
+    padding: 3rem;
+  }
+
+  .nfts > div {
+    width: 100%;
+  }
+
+  .nfts-title {
+    font-size: 35px;
+  }
+
+  .nfts-description {
+    font-size: 14px;
+  }
+
+  .nfts-btn {
+    font-size: 12px;
+  }
+
+  .nfts-image {
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .container {
+    padding: 2rem 4rem;
+    gap: 2rem;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-text-title {
+    width: 100%;
+  }
+
+  .hero-text-description {
+    width: 100%;
+  }
+
+  .hero-search {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .search-input {
+    width: 60%;
+    border-radius: 8px;
+  }
+
+  .search-btn {
+    width: 30%;
+    border-radius: 8px;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .community-logos {
+    padding: 0.5rem 4rem;
+  }
+
+  .inspiration {
+    padding: 2rem 4rem;
+  }
+
+  .inspiration-title {
+    font-size: 35px;
+  }
+
+  .inspiration-house-cards {
+    justify-content: space-around;
+    gap: 4rem;
+  }
+
+  .nfts {
+    flex-direction: column;
+    gap: 4rem;
+    width: 100%;
+    padding: 4rem;
+  }
+
+  .nfts > div {
+    width: 100%;
+  }
+
+  .nfts-image {
+    width: 100%;
+  }
+}
