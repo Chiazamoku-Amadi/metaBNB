@@ -16,6 +16,7 @@
 .inspiration-house-picture {
   width: 230px;
   height: 265px;
+  cursor: pointer;
 }
 
 .inspiration-house-title,
