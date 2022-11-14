@@ -65,7 +65,7 @@ function App() {
         <h3 className="inspiration-title">
           Inspiration for your next adventure
         </h3>
-        <div>{inspirationHouseCards}</div>
+        <div className="inspiration-house-cards">{inspirationHouseCards}</div>
       </section>
     </>
   );
