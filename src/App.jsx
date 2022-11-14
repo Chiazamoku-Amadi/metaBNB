@@ -2,13 +2,11 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import inspirationHousesData from "./inspirationHousesData";
 import Cards from "./components/Cards/Cards";
-import heroHouse1 from "./assets/heroHouse1.webp";
-import heroHouse2 from "./assets/heroHouse2.webp";
-import heroHouse3 from "./assets/heroHouse3.webp";
-import heroHouse4 from "./assets/heroHouse4.webp";
+import heroImage from "./assets/heroImage.webp";
 import MBToken from "./assets/MBTokenLogo.webp";
 import Metamask from "./assets/MetamaskLogo.webp";
 import OpenSea from "./assets/OpenSeaLogo.webp";
+import NftsImage from "./assets/NftsImage.webp";
 
 function App() {
   const inspirationHouseCards = inspirationHousesData.map(
@@ -44,16 +42,7 @@ function App() {
               </label>
             </div>
           </div>
-          <div className="hero-images">
-            <div className="hero-images1">
-              <img src={heroHouse1} className="hero-image" />
-              <img src={heroHouse2} className="hero-image" />
-            </div>
-            <div className="hero-images2">
-              <img src={heroHouse3} className="hero-image" />
-              <img src={heroHouse4} className="hero-image" />
-            </div>
-          </div>
+          <img src={heroImage} className="hero-image" />
         </div>
       </section>
       <section className="community-logos">
@@ -66,6 +55,18 @@ function App() {
           Inspiration for your next adventure
         </h3>
         <div className="inspiration-house-cards">{inspirationHouseCards}</div>
+      </section>
+      <section className="nfts">
+        <div>
+          <h3 className="nfts-title">Metabnb NFTs</h3>
+          <p className="nfts-description">
+            Discover our NFT gift cards collection. Loyal customers gets amazing
+            gift cards which are traded as NFTs. These NFTs gives our cutomer
+            access to loads of our exclusive services.
+          </p>
+          <button className="nfts-btn">Learn More</button>
+        </div>
+        <img src={NftsImage} className="nfts-image" />
       </section>
     </>
   );
