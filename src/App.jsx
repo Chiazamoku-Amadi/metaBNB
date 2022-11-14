@@ -7,7 +7,7 @@ import heroImage from "./assets/heroImage.webp";
 import MBToken from "./assets/MBTokenLogo.webp";
 import Metamask from "./assets/MetamaskLogo.webp";
 import OpenSea from "./assets/OpenSeaLogo.webp";
-import NftsImage from "./assets/NftsImage.webp";
+import NftsImage from "./assets/nftsImage.png";
 
 function App() {
   const inspirationHouseCards = inspirationHousesData.map(
