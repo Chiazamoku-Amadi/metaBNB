@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
 import Logo from "../../assets/logo.webp";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
@@ -22,8 +23,16 @@ function Header() {
             {openNavbar ? <GrClose /> : <GiHamburgerMenu />}
           </button>
           <ul className={openNavbar ? "hamburgerNavbar" : "navbar"}>
-            <li>Home</li>
-            <li>Place to Stay</li>
+            <li>
+              <Link to="/" className="home">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/place-to-stay" className="place-to-stay">
+                Place to Stay
+              </Link>
+            </li>
             <li>NFTs</li>
             <li>Community</li>
           </ul>
