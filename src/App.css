@@ -15,9 +15,9 @@
 
 .hero-text-title {
   color: #434343;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 45px;
-  width: 520px;
+  width: 530px;
 }
 
 .purple {
@@ -101,7 +101,7 @@
 
 .inspiration-title {
   color: #000000;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 35px;
   text-align: center;
 }
@@ -133,7 +133,7 @@
 }
 
 .nfts-title {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 48px;
   background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
   -webkit-background-clip: text;
