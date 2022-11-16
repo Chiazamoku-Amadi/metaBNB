@@ -54,7 +54,7 @@ function Header() {
           className="modal"
         />
         <button onClick={showConnectWallet} className="header-btn">
-          Connect Wallet
+          Connect wallet
         </button>
       </div>
     </div>

@@ -28,11 +28,55 @@
 }
 
 .inspiration-house-price {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 11px;
   color: #434343;
 }
 
 .rating {
   align-self: flex-start;
+}
+
+@media (min-width: 880px) and (max-width: 1024px) {
+  .inspiration-house-picture {
+    width: 280px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1152px) {
+  .inspiration-house-picture {
+    width: 320px;
+  }
+
+  .inspiration-house-title,
+  .inspiration-house-distance,
+  .inspiration-house-duration,
+  .inspiration-house-price {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1153px) and (max-width: 1341px) {
+  .inspiration-house-picture {
+    width: 200px;
+  }
+
+  .inspiration-house-title,
+  .inspiration-house-distance,
+  .inspiration-house-duration,
+  .inspiration-house-price {
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 1640px) and (max-width: 1821px) {
+  .inspiration-house-picture {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1822px) and (max-width: 2186px) {
+  .inspiration-house-picture {
+    width: 380px;
+  }
 }
