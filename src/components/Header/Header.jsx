@@ -4,9 +4,19 @@ import { Link } from "react-router-dom";
 import Logo from "../../assets/logo.webp";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
+import Modal from "../Modal/Modal";
 
 function Header() {
   const [openNavbar, setOpenNavbar] = useState(false);
+  const [show, setShow] = useState(false);
+
+  function showConnectWallet() {
+    setShow(true);
+  }
+
+  function hideConnectWallet() {
+    setShow(false);
+  }
 
   function handleNavbarClick() {
     setOpenNavbar(!openNavbar);
@@ -37,7 +47,10 @@ function Header() {
             <li>Community</li>
           </ul>
         </nav>
-        <button className="header-btn">Connect Wallet</button>
+        <Modal onClose={hideConnectWallet} show={show} className="modal" />
+        <button onClick={showConnectWallet} className="header-btn">
+          Connect Wallet
+        </button>
       </div>
     </div>
   );
