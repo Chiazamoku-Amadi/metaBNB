@@ -85,3 +85,25 @@
   font-size: 14px;
   color: #000000;
 }
+
+@media only screen and (max-width: 600px) {
+  .modal-main {
+    width: 70%;
+  }
+
+  .modal-header > p {
+    font-size: 18px;
+  }
+
+  .modal-body > p {
+    font-size: 10px;
+  }
+
+  .modal-select-btn > div > img {
+    width: 1rem;
+  }
+
+  .modal-select-btn > div > p {
+    font-size: 12px;
+  }
+}
