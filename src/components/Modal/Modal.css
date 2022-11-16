@@ -41,6 +41,10 @@
   color: #333333;
 }
 
+.close-modal {
+  cursor: pointer;
+}
+
 .modal-body {
   display: flex;
   flex-direction: column;

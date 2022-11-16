@@ -47,7 +47,12 @@ function Header() {
             <li>Community</li>
           </ul>
         </nav>
-        <Modal onClose={hideConnectWallet} show={show} className="modal" />
+        <Modal
+          onClose={hideConnectWallet}
+          show={show}
+          hide={hideConnectWallet}
+          className="modal"
+        />
         <button onClick={showConnectWallet} className="header-btn">
           Connect Wallet
         </button>

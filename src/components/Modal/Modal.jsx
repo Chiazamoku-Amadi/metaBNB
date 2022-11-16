@@ -5,7 +5,7 @@ import metaMaskIcon from "../../assets/metaMaskIcon.webp";
 import walletConnectIcon from "../../assets/walletConnectIcon.webp";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
-function Modal({ onClose, show, children }) {
+function Modal({ onClose, show, hide }) {
   return (
     <div
       onClick={onClose}
@@ -14,7 +14,7 @@ function Modal({ onClose, show, children }) {
       <section className="modal-main" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
           <p>Connect Wallet</p>
-          <GrClose />
+          <GrClose onClick={hide} className="close-modal" />
         </div>
         <div className="modal-body">
           <p>Choose your preferred wallet:</p>
