@@ -15,7 +15,7 @@
 
 .hero-text-title {
   color: #434343;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 45px;
   width: 520px;
 }
@@ -108,7 +108,7 @@
 
 .inspiration-house-cards {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
@@ -224,6 +224,7 @@
   }
 
   .inspiration-house-cards {
+    justify-content: center;
     gap: 2rem;
   }
 
